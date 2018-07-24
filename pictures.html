@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>pictures</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <style>
+    img {
+      width: 90%;
+    }
+    body{
+      background-color: pink
+
+    }
+    </style>
+  </head>
+
+  <body>
+    <div class='topnav'>
+   <a href="index.html">Home</a>
+   <a href="happy_birthday.html">Birthday</a>
+   <a href="animals.html">Animal</a>
+   <a href="games.html">Games</a>
+   <a href="spaceships.html">Spaceships</a>
+   <a class="active" href="pictures.html">CommonAnimals</a>
+</div>
+    <h1>Common Animals</h1>
+    <h2>Click on the photo to see a random image</h2>
+    <img src="http://barbara-5.info/wp-content/uploads/2016-04-23_10-45-21-300x200.jpg" alt='image' id="changeablePic" onClick="change();">
+
+    <script type="text/javascript">
+      var catPic = "http://www.3sidedmedia.com/Portals/3/EasyGalleryImages/1/251/1510172827500.jpg";
+      var eaglePic = "https://i.pinimg.com/originals/6c/22/55/6c2255fa0b0dacd08269db43952aab94.jpg";
+      var llamaPic = "https://i.pinimg.com/736x/2c/a2/ea/2ca2ea2ab0dbd5ca123508d0248768f6--llama-llama-llama-face.jpg";
+      var foxPic = "https://media.moddb.com/images/groups/1/15/14536/Fox.1.jpg";
+      var pigPic = "https://kids.nationalgeographic.com/content/dam/kids/photos/animals/Mammals/H-P/pig-young-closeup.ngsversion.1412640764383.jpg";
+      var lionPic = "http://images6.fanpop.com/image/photos/37400000/cute-lion-cub-lion-cubs-37492142-500-375.jpg";
+      var snakePic = "https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/snake-1524686972.jpg";
+      var cheetahPic = "https://www.worldatlas.com/r/w728-h425-c728x425/upload/eb/d2/30/shutterstock-670406392.jpg";
+      var pandaPic = "https://i.ytimg.com/vi/cAamrkLjIuM/maxresdefault.jpg";
+      var dogPic = "https://i.pinimg.com/originals/b7/2c/08/b72c0842d210dca2bf792aed42ce92fa.jpg";
+      var animalPics = [catPic, eaglePic, llamaPic, foxPic, pigPic, lionPic, snakePic, cheetahPic, pandaPic, dogPic ];
+
+      function change() {
+        var image = document.getElementById('changeablePic');
+        var animalPic = random(0, 10)
+        image.src = animalPics[animalPic]
+      }
+
+      function random(min, max) {
+        min = Math.ceil(min);
+        max = Math.floor(max);
+        return Math.floor(Math.random() * (max - min)) + min;
+        //The maximum is exclusive and the minimum is inclusive
+      }
+    </script>
+  </body>
+</html>
