@@ -2,106 +2,54 @@
 <html>
 <head>
 	<title>Index designed by Brian</title>
-	<link rel="stylesheet" type="text/css" href="styles.css">
+	<link rel="stylesheet" type="text/css" href="style.css">
 	<style type="text/css">
-		h1{
-			text-align: center;
-			color: black;
-			font-size: 66px;
-			font-family: ITC Serif Gothic STD Black, Impact, Times New Roman;
+		@import url('http://fonts.cdnfonts.com/css/common-pixel');
+    h1{
+			color: white;
+			font-size: 40px;
+			font-family: Verdana, Arial, Times New Roman;
 		}
 		body{
-			background-color: rgb(244,244,200);
-			text-align: center;
+      max-height: 1200px;
+      min-height: 1200px;
+			background: url("mario.jpg")
 		}
-		p{
-			text-align: center;
-			font-size: 40px;
-			font-family: ITC Serif Gothic STD Black;
-		}
-		.center {
-        margin: auto;
-        width: 55%;
-        height: 60%;
-        padding: 10px;
-        }
-        .clock_center{
-        	margin: auto;
-            width: 20%;
-            height: 60%;
-            padding: 20px;
-        }
-        #Bottom{
-        	font-size: 20px;
-        	font-family: Times New Roman;
-        }
-        #clock{
-        width:170px;
-        height:44px;
-        color: rgb(255,105,255);
-        font-size: 32px;
-        text-align: center;
-        background-color: rgb(55,55,55);
-        border-width: 5px solid pink;
+    .homePage{
+      width: 400px;
+      height: 200px;
+      background: url("leftCloud.jpg");
+      font-family: 'Common Pixel', sans-serif;
+      font-size: 40px;
+      color: white;
     }
   </style>
-  <script type="text/javascript">
-    var timer;
-    function displayClock()
-    {
-      timer = setInterval(updateClock, 1000);
-    }
-
-    function updateClock()
-    {
-      var dateTime = new Date();
-      var output = "";
-      var ampm = "AM";
-      var hours = dateTime.getHours();
-
-      if (hours > 12)
-      {
-        hours -= 12;
-        ampm = "PM";
-      }
-      if (hours < 10)
-      {
-        hours = "0" + hours;
-      }
-      var minutes = dateTime.getMinutes();
-      if (minutes < 10)
-      {
-        minutes = "0" + minutes;
-      }
-      var seconds = dateTime.getSeconds();
-      if (seconds < 10)
-      {
-        seconds = "0" + seconds;
-      }
-      document.getElementById("clock").innerHTML = hours + ":" + minutes + ":" + seconds + " " + ampm;
-    }
-  </script>
 
 </head>
 <body>
-<div class='topnav'>
-   <a class="active" href="index.html">Home</a>
-   <a href="happy_birthday.html">Birthdays</a>
-   <a href="animals.html">Animal</a>
-   <a href="spaceships.html">Spaceships</a>
-   <a href="games.html">Games</a>
-   <a href="pictures.html">Common Animals</a>
-   <a href="geo_location.html">Geolocation</a> 
-   
-</div>
-    <body onload="displayClock();">
-    <div id="clock"></div>
-    <h1>Welcome to Ying-Chi's Websites</h1>
-    <img src="https://img00.deviantart.net/a8c5/i/2016/340/5/f/pikachu_by_thelieutenantsurge-daqsque.png">
-    <p><br><br><br><br> Where I'm From...</p>
+  <div class = 'top'>
+    <div class='nav'>
+       <a style="cursor:pointer;" class="active" href="index.html"> <img class="thumbnail" src="home.jpg" alt="Home"></a>
+       <a style="cursor:pointer;" href="AboutMe.html">              <img class="thumbnail" src="aboutMe2.jpg" alt="About Me"></a>
+       <a style="cursor:pointer;" href="animals.html">              <img class="thumbnail" src="hobbies.jpg" alt="Hobbies"></a>
+       <a style="cursor:pointer;" href="spaceships.html">           <img class="thumbnail" src="career.jpg" alt="Career"></a>
+    </div>
+  </div>
+  <body>
+
+    </div>
+
+
+    <!-- where im from -->
+    <!--
+    <p style="text-align: center"> Where I'm From...</p>
     <div class= 'center'>
       <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3746158.9606219195!2d119.14647623699595!3d24.297435043729624!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x346ef3065c07572f%3A0xe711f004bf9c5469!2z5Y-w54Gj!5e0!3m2!1szh-TW!2sus!4v1532724123349" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
-    </div>
-<p id="Bottom"> <br> <br> <br> --------------------------------------------------------------------------------------------------------------<BR> B.R.I.A.N. Co. All rights reserved</p>
-</body>
+    </div>-->
+
+    <!-- hyperspace video -->
+    <!--<video autoplay loop muted id="myVideo" width="100%" height="100%">
+      <source width="auto" src="hyperspace.mp4" type="video/mp4">
+    </video> -->
+  </body>
 </html>
