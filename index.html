@@ -5,6 +5,10 @@
 	<link rel="stylesheet" type="text/css" href="style.css">
 	<style type="text/css">
 		@import url('http://fonts.cdnfonts.com/css/common-pixel');
+    @font-face {
+      font-family: 'retro';
+      src: URL('ARCADECLASSIC.TTF') format('truetype');
+    }   
     h1{
 			color: white;
 			font-size: 40px;
@@ -13,23 +17,33 @@
 		body{
       max-height: 1100px;
       min-height: 1100px;
-			background: url("mario.jpg")
+			background: url("mario.jpg");
 		}
     .titleWrap{
-      min-width: 677px;
-      min-height: 294px;
-      padding-top: 10%;
-      padding-left: 25%;
-      padding-right: 25%;
+      min-width: 784px;
+      min-height: 344px;
+      padding-top: 5%;
+      padding-left: 15%;
+      padding-right: 15%;
       text-align: center;
     }
     .title{
-      min-width: 677px;
-      min-height: 294px;
+      color: white;
+      font-size: 24px;
+      font-family: "retro",ARCADECLASSIC, Arial;
+      -webkit-font-smoothing : none;
+      text-decoration: none;
+      min-width: 784px;
+      min-height: 344px;
       max-width: 50%;
       max-height: 40%;
       text-align: center;
       background: url('title.png');
+    }
+    .resume{
+      padding-left: 15%;
+      padding-top: 21.5%;
+      padding-bottom: 5%;
     }
 
   </style>
@@ -49,11 +63,12 @@
     </div>
   </div>
   <div class="titleWrap">
+    <a href="Ying-Chi_Chen_Resume.docx" download="Ying-Chi_Resume.docx"></a>
     <div class="title">
       <div class="resume">
-        <img src="coin.gif">
+        <img src="coin.gif" style="width: 95px; height: auto;">
       </div>
-
+      click&nbsp;&nbsp;&nbsp;&nbsp;to&nbsp;&nbsp;&nbsp;&nbsp;download&nbsp;&nbsp;&nbsp;&nbsp;resume&nbsp;&nbsp;&nbsp;&nbsp;:D
     </div>
   </div>
   <body>
