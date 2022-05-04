@@ -8,7 +8,12 @@
     @font-face {
       font-family: 'retro';
       src: URL('ARCADECLASSIC.TTF') format('truetype');
-    }   
+    }  
+    @font-face {
+      font-family: 'FFFFORWARD';
+      src: URL('FFFFORWA.TTF ') format('truetype');
+    } 
+
     h1{
 			color: white;
 			font-size: 40px;
@@ -31,7 +36,6 @@
       color: white;
       font-size: 24px;
       font-family: "retro",ARCADECLASSIC, Arial;
-      -webkit-font-smoothing : none;
       text-decoration: none;
       min-width: 784px;
       min-height: 344px;
@@ -40,10 +44,14 @@
       text-align: center;
       background: url('title.png');
     }
-    .resume{
+    .coin{
       padding-left: 15%;
       padding-top: 21.5%;
       padding-bottom: 5%;
+    }
+    .resume{
+      color: white;
+      text-decoration: none;
     }
 
   </style>
@@ -63,13 +71,14 @@
     </div>
   </div>
   <div class="titleWrap">
-    <a href="Ying-Chi_Chen_Resume.docx" download="Ying-Chi_Resume.docx"></a>
+    <a class="resume" href="Ying-Chi_Chen_Resume.docx" download="Ying-Chi_Chen_Resume.docx">
     <div class="title">
-      <div class="resume">
+      <div class="coin">
         <img src="coin.gif" style="width: 95px; height: auto;">
       </div>
-      click&nbsp;&nbsp;&nbsp;&nbsp;to&nbsp;&nbsp;&nbsp;&nbsp;download&nbsp;&nbsp;&nbsp;&nbsp;resume&nbsp;&nbsp;&nbsp;&nbsp;:D
+        click&nbsp;&nbsp;&nbsp;&nbsp;to&nbsp;&nbsp;&nbsp;&nbsp;download&nbsp;&nbsp;&nbsp;&nbsp;resume
     </div>
+    </a>
   </div>
   <body>
 
